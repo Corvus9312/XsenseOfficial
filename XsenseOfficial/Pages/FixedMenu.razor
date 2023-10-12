@@ -1,0 +1,42 @@
+﻿@using XsenseOfficial.ViewModels;
+
+<ul class="sidebar-wrap mini" style=@Styles>
+    <li class="sidebar-item">
+        <i class="p-a sidebar-label"></i>
+        <a href="javascript:BlazorScrollToId('top')">▲Top▲</a>
+    </li>
+    @foreach (var sidebar in Sidebars)
+    {
+        <li class="sidebar-item">
+            <i  class="p-a sidebar-label"></i>
+
+            @if (sidebar.Disabled)
+            {
+                <span>@sidebar.Title</span>
+            }
+            else
+            {
+                <a href=@sidebar.Href>@sidebar.Title</a>
+            }
+            @if (sidebar.SubSidebars != null && sidebar.SubSidebars.Any())
+            {
+                <ul class="subSidebar">
+                    @foreach (var subSidebar in sidebar.SubSidebars)
+                    {
+                        <li class="subSidebar-item"><a href=@subSidebar.Href>@subSidebar.Title</a></li>
+                    }
+                </ul>
+            }
+        </li>
+    }
+
+
+</ul>
+
+@code {
+    [Parameter]
+    public List<SidebarVM> Sidebars { get; set; } = new();
+
+    [Parameter]
+    public string? Styles { get; set; }
+}

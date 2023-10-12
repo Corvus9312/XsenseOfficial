@@ -1,0 +1,12 @@
+﻿section h2::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: #198754;
+    margin:10px auto;
+}
+
+p {
+    margin: 0px;
+}
