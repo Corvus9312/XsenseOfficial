@@ -98,43 +98,43 @@ public class ProductBase : CusComponentBase
                 new ()
                 {
                     Title = Localizer["散熱基板"],
-                    Href = "/Product/0",
+                    Href = "Product/0",
                     Disabled = true,
                     SubSidebars = new()
                     {
                         new()
                         {
                             Title = Localizer["邊射型雷射用"],
-                            Href = "/Product/1"
+                            Href = "Product/1"
                         },
                         new()
                         {
                             Title = Localizer["高頻元件用"],
-                            Href = "/Product/2"
+                            Href = "Product/2"
                         }
                     }
                 },
                 new ()
                 {
                     Title = Localizer["代工服務"],
-                    Href = "/Product/3",
+                    Href = "Product/3",
                     Disabled = true,
                     SubSidebars = new()
                     {
                         new()
                         {
                             Title = Localizer["金錫合金鍍膜"],
-                            Href = "/Product/4"
+                            Href = "Product/4"
                         },
                         new()
                         {
                             Title = Localizer["薄膜金屬化加工"],
-                            Href = "/Product/5"
+                            Href = "Product/5"
                         },
                         new()
                         {
                             Title = Localizer["黃光.蝕刻製程加工"],
-                            Href = "/Product/6"
+                            Href = "Product/6"
                         }
                     }
                 }
