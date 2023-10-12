@@ -64,7 +64,7 @@ a, .btn-link {
     }
 
 .sidebar-wrap {
-    background-image: url("../Images/sidebar-ul.png");
+    background-image: url("../images/sidebar-ul.png");
     transform-origin: center left;
     position: fixed;
     top: 30vh;
@@ -112,7 +112,7 @@ a, .btn-link {
     }
 
 .sidebar-label {
-    background-image: url("../Images/sidebar-li.png");
+    background-image: url("../images/sidebar-li.png");
     background-repeat: no-repeat;
     transition-duration: .3s;
     top: 8px;
