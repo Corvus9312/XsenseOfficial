@@ -63,6 +63,12 @@ a, .btn-link {
         content: "An error has occurred."
     }
 
+@media (max-width: 1660px) {
+    .sidebar-wrap {
+        display: none;
+    }
+}
+
 .sidebar-wrap {
     background-image: url("../images/sidebar-ul.png");
     transform-origin: center left;
@@ -131,4 +137,16 @@ a, .btn-link {
 
 .fs-8 {
     font-size: 0.5rem !important
+}
+
+.indent-0 {
+    text-indent: 0em;
+}
+
+.indent-1 {
+    text-indent: 1em;
+}
+
+.indent-2 {
+    text-indent: 2em;
 }

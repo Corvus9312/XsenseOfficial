@@ -1,5 +1,4 @@
-﻿using System.Net.Http.Json;
-using Xsense_Front_End.Pages;
+﻿using Xsense_Front_End.Pages;
 using XsenseOfficial.ViewModels;
 using XsenseOfficial_Admin.ViewModels;
 

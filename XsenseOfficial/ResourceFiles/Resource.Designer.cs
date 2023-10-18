@@ -79,7 +79,7 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
-        ///   查詢類似 半導體級貴重金屬鍍膜製造商 的當地語系化字串。
+        ///   查詢類似 公司基本介紹 的當地語系化字串。
         /// </summary>
         public static string 公司基本介紹 {
             get {

@@ -5,10 +5,10 @@ namespace XsenseOfficial.Pages;
 
 public class IndexBase : CusComponentBase
 {
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await base.OnInitializedAsync();
+        await JsRuntime.InvokeVoidAsync("SetSwiper");
 
-        await JsRuntime.InvokeAsync<IJSObjectReference>("import", "./Pages/Index.razor.js");
+        await base.OnAfterRenderAsync(firstRender);
     }
 }
