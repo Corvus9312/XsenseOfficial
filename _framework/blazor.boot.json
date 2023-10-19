@@ -48,16 +48,16 @@
       "System.Runtime.dll": "sha256-lZlYNQVbZi\/GuZmRxKidcj\/Avzn+4NeW7VeBOZRFkjE=",
       "System.Text.Encodings.Web.dll": "sha256-iOkE8\/mKvFitPlKxTQ75YHY+L78kyKdb9zvsXSnDXPA=",
       "System.Text.Json.dll": "sha256-n\/m6D8Dm42jciPaY9dW3qzDHBGqUpodFkMWRgoyNvu0=",
-      "XsenseOfficial.dll": "sha256-LzZNRSzFDHMRqPlJGMvK2x51lY6UdKNDAU3D7Ic0tuY="
+      "XsenseOfficial.dll": "sha256-Rpq62b9HGcYBlbjjCUeYGHfOOuN5GgROWuACDvOimSg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": null,
     "runtime": {
-      "dotnet.6.0.22.bza2lghlst.js": "sha256-Ej96cU8\/uyKYNs0kCxWv4Vgsnw8nPiGO5t\/ZZ1G6HG8=",
+      "dotnet.6.0.22.bza2lghlst.js": "sha256-DEh+1bxTHRjn+KjVSLMQurMryogQkPET111prAM7fEA=",
       "dotnet.timezones.blat": "sha256-N2SuAANiazIlnNZXtFIeu4WVCpig5teMfjzltEkViTc=",
-      "dotnet.wasm": "sha256-jW+QUWwsOf+ySZYiiOVTKdAVzfQIeDQd6U6ZPyYXUJA=",
+      "dotnet.wasm": "sha256-OztjKOTT6vKme5bZw3VKSwKcWHp1yNCIrxnm0Mladi4=",
       "icudt.dat": "sha256-Zuq0dWAsBm6\/2lSOsz7+H9PvFaRn61KIXHMMwXDfvyE=",
       "icudt_CJK.dat": "sha256-WPyI4hWDPnOw62Nr27FkzGjdbucZnQD+Ph+GOPhAedw=",
       "icudt_EFIGS.dat": "sha256-4RwaPx87Z4dvn77ie\/ro3\/QzyS+\/gGmO3Y\/0CSAXw4k=",
@@ -66,15 +66,15 @@
     "runtimeAssets": {
       "dotnet.wasm": {
         "behavior": "dotnetwasm",
-        "hash": "sha256-jW+QUWwsOf+ySZYiiOVTKdAVzfQIeDQd6U6ZPyYXUJA="
+        "hash": "sha256-OztjKOTT6vKme5bZw3VKSwKcWHp1yNCIrxnm0Mladi4="
       }
     },
     "satelliteResources": {
       "en-US": {
-        "en-US\/XsenseOfficial.resources.dll": "sha256-GAYDZAvyPhiH0QTmuRhCbrPuJuaFV5cq0Xhwa881ags="
+        "en-US\/XsenseOfficial.resources.dll": "sha256-M+HDn2Bu+FzTrAfV6nwwfJZvu+UvGTHZ5QvEN26ikw8="
       },
       "zh-CN": {
-        "zh-CN\/XsenseOfficial.resources.dll": "sha256-wgab81zQtsh2YVX5kNqDZ\/z5G8\/9QJIOoXwHNyDCl8c="
+        "zh-CN\/XsenseOfficial.resources.dll": "sha256-qMYMl5mL2N1VGOjJ5ul\/yzx0Jjkqp2iaDU4fuZCD6t8="
       }
     }
   }
