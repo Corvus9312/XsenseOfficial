@@ -201,12 +201,12 @@
     background: #FF6B6B;
 }
 /* /Pages/Contact.razor.rz.scp.css */
-img[b-x8fw9h5liu] {
+iframe[b-x8fw9h5liu] {
     width: 80%;
 }
 
 @media (max-width: 1660px) {
-    img[b-x8fw9h5liu] {
+    iframe[b-x8fw9h5liu] {
         width: 100%;
     }
 }
