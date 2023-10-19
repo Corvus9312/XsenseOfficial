@@ -71,10 +71,10 @@
     },
     "satelliteResources": {
       "en-US": {
-        "en-US\/XsenseOfficial.resources.dll": "sha256-JvobASAfRE3QeE7LOGGkV7coCAnpwFEIjtUuspQqfoQ="
+        "en-US\/XsenseOfficial.resources.dll": "sha256-Rer0JD9DbZJGvuKPocPPgLXtcI\/O\/eJa1\/\/+KBwFc3o="
       },
       "zh-CN": {
-        "zh-CN\/XsenseOfficial.resources.dll": "sha256-PJEtWQrChWz3GKM3iKdtLNarei8s9xkovH\/Y0hE65Z4="
+        "zh-CN\/XsenseOfficial.resources.dll": "sha256-JaSaty2Kr+PlLcJZXdc9dW7LrBjnWheMqYFeHw8uLbc="
       }
     }
   }
