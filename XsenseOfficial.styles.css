@@ -200,6 +200,16 @@
 .marker-outline .timeline-item:hover .timeline-marker[b-2i1jiwb3d8]:before {
     background: #FF6B6B;
 }
+/* /Pages/Contact.razor.rz.scp.css */
+img[b-x8fw9h5liu] {
+    width: 80%;
+}
+
+@media (max-width: 1660px) {
+    img[b-x8fw9h5liu] {
+        width: 100%;
+    }
+}
 /* /Pages/Index.razor.rz.scp.css */
 img[b-ymcmulqmam] {
     max-height: 100%;
