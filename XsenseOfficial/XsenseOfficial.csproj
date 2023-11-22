@@ -1,42 +1,56 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
-	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
-		<BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
-		<Nullable>enable</Nullable>
-		<ImplicitUsings>enable</ImplicitUsings>
-	</PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
 
-	<ItemGroup>
-	  <Compile Remove="ResourceFiles\NewFolder\**" />
-	  <Content Remove="ResourceFiles\NewFolder\**" />
-	  <EmbeddedResource Remove="ResourceFiles\NewFolder\**" />
-	  <None Remove="ResourceFiles\NewFolder\**" />
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\.gitattributes" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.18" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.18" PrivateAssets="all" />
-		<PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.9" />
-	</ItemGroup>
+  <ItemGroup>
+    <Folder Include="ResourceFiles\" />
+  </ItemGroup>
 
-	<ItemGroup>
-	  <Compile Update="ResourceFiles\Resource.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>Resource.resx</DependentUpon>
-	  </Compile>
-	</ItemGroup>
+  <ItemGroup>
+    <Content Update="Components\Layout\MainLayout.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+  </ItemGroup>
 
-	<ItemGroup>
-	  <EmbeddedResource Update="ResourceFiles\Resource.resx">
-	    <Generator>PublicResXFileCodeGenerator</Generator>
-	    <LastGenOutput>Resource.Designer.cs</LastGenOutput>
-	  </EmbeddedResource>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="wwwroot\images\contact\" />
-	</ItemGroup>
+  <ItemGroup>
+    <None Update="Templates\Products\FoundryService\1.zh-TW.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\FoundryService\2.zh-TW.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\FoundryService\3.zh-TW.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\SubMount\HighFrequencyDeviceSubMount.en-US.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\SubMount\HighFrequencyDeviceSubMount.zh-CN.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\SubMount\HighFrequencyDeviceSubMount.zh-TW.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\SubMount\MetalEdgeEmittingLaserSubMount.en-US.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\SubMount\MetalEdgeEmittingLaserSubMount.zh-CN.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\SubMount\MetalEdgeEmittingLaserSubMount.zh-TW.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\SubMount\PowerDeviceSubMount.zh-TW.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

@@ -1,0 +1,70 @@
+﻿@using XsenseOfficial.Shared
+@inherits MainLayoutBase
+
+<PageTitle>艾格生科技</PageTitle>
+
+<div id="top" class="d-flex flex-column" style="min-height: 100vh;">
+    <main class="flex-shrink-0 mb-4">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-image: url(/images/bg_banner.jpg); background-size: 100vw;">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/logo.png" alt="Xense" style="width: 15vw; min-width: 200px;" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#xsenseNavbar" aria-controls="xsenseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="xsenseNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/about">關於艾格生</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                產品
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Product/1">散熱基板</a></li>
+                                <li><a class="dropdown-item" href="/Product/3">功率元件</a></li>
+                                <li><a class="dropdown-item" href="/Product/5">代工服務</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/EnterpriseSustainable">企業永續發展</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/JoinUs">加入我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/Contact">聯絡我們</a>
+                        </li>
+                        @* <li class="nav-item">
+                            <select @bind="Culture" class="form-select" style="background-color: transparent;">
+                                @foreach (var culture in SupportedCultures)
+                                {
+                                    <option value="@culture">@culture.Name</option>
+                                }
+                            </select>
+                        </li> *@
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid" style="padding: 80px 0 0 0">
+                @Body
+        </div>
+
+    </main>
+    <footer class="footer mt-auto border-top">
+        <div class="container d-flex justify-content-between py-1">
+            <p class="mb-2">
+                Copyright © 2016 Xsense Technology Corp, INC. All rights reserved.
+                <br />
+                Tel:+886-37-580079　　Fax:+886-37-580393　　E-mail:<a href="MailTo:xservice@xsensetw.com">xservice@xsensetw.com</a>
+                <br />
+                Address : 350401 新竹科學園區苗栗縣竹南鎮科北一路21號3樓 
+            </p>
+        </div>
+    </footer>
+
+</div>

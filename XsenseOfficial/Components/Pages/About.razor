@@ -1,0 +1,105 @@
+﻿@page "/about";
+@inherits AboutBase
+
+<PageTitle>艾格生科技 - 關於艾格生</PageTitle>
+
+<FixedMenu Sidebars="Sidebars" Styles="top: 30vh; background-size: 30px 325px;" />
+
+<div class="container mt-4" style="width: 90%">
+    <div class="row text-center">
+        <h1 class="fs-1 fw-bolder">關於我們</h1>
+    </div>
+    <div class="row">
+        <section id="profile" class="mt-4">
+            <h2 class="fs-3 fw-bolder text-success">公司介紹</h2>
+            <div class="row">
+                <div class="col-lg-8 mt-2 fs-4">
+                    <p class="mt-2 mb-0 indent-2">
+                        艾格生科技係由母公司台灣光罩股份有限公司挹注產業多元資源，結合關係企業行銷網絡，成為第一家整合產業界、學界專業技術之貴重金屬鍍膜新創公司。
+                    </p>
+                    <p class="mt-2 mb-0 indent-2">
+                        本公司團隊招攬了半導體、材料、電子、機構、微機電等各方面專業人才，不斷強化研發能力及製造品質，厚植鍍膜核心技術以及生產製造實務經驗。
+                    </p>
+                    <p class="mt-2 mb-0 indent-2">
+                        持續秉持為客戶生產高品質產品精神，聚焦專業鍍膜新興應用技術，提供整合光、機、電高端產品之高性價比解決方案，以專業全方位協助客戶，滿足客戶需求與服務。
+                    </p>
+                    <div class="row">
+                        <div class="col-lg p-4">
+                            <p class="mb-2 fs-1 fw-bold">1000</p>
+                            <p class="fs-5">半導體1000 等級無塵室</p>
+                        </div>
+                        <div class="col-lg p-4">
+                            <p class="mb-2 fs-1 fw-bold">30M</p>
+                            <p class="fs-5">與世界積光設備大廠合作，具極高市佔率。</p>
+                        </div>
+                        <div class="col-lg p-4">
+                            <p class="mb-2 fs-1 fw-bold">19</p>
+                            <p class="fs-5">公司申請並已授權之專利超過19項。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 border text-center align-self-center">
+                    <img src="images/profile.jpg" style="object-fit: contain; width: 100%; height: 100%;" class="m-2" />
+                    <br />
+                    <span>艾格生科技股份有限公司</span>
+                </div>
+            </div>
+        </section>
+        <section id="vision" class="mt-4">
+            <h2 class="fs-3 fw-bolder text-success">願景</h2>
+            <div>
+                <img src="images/about/vision.png" style="width: 100%" />
+            </div>
+        </section>
+        <section id="competence" class="mt-4">
+            <h2 class="fs-3 fw-bolder text-success">核心競爭力</h2>
+            <ul class="fs-4 mt-2">
+                <li>金屬化及相關制程的專業技術能力</li>
+                <li>客制化的設計及制程能力</li>
+                <li>專業且經驗豐富的經營團隊，統整半導體經驗，創造極佳生產效率與品質</li>
+                <li>Class 1000 等級無塵室</li>
+            </ul>
+        </section>
+        <section id="milestone" class="mt-4">
+            <h2 class="fs-3 fw-bolder text-success">里程碑</h2>
+            <div class="row align-middle mt-4">
+                <ul class="timeline timeline-centered">
+                    @foreach (var milestone in MileStones)
+                    {
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>@milestone.Time</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">@milestone.EventTitle</h3>
+                                <p>@milestone.Content</p>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </section>
+        <section id="quality" class="mt-4">
+            <h2 class="fs-3 fw-bolder text-success">品質政策</h2>
+            <div class="text-center mt-2">
+                <img src="images/about/Quality.zh-TW.png" style="width: 75%;" />
+            </div>
+        </section>
+        <section id="sgs" class="mt-4">
+            <h2 class="fs-3 fw-bolder text-success">SGS RoHS ISO</h2>
+            <div class="row align-middle m-2">
+                <div class="col-lg text-center">
+                    <img src="images/about/ISO9001.png" style="width: 100%" />
+                    <br />
+                    <span>ISO9001 證照</span>
+                </div>
+                <div class="col-lg text-center">
+                    <img src="images/about/RoHS.png" style="width: 100%" />
+                    <br />
+                    <span>RoHS 報告</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
