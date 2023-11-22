@@ -1,4 +1,4 @@
-﻿using Xsense_Front_End.Pages;
+﻿using XsenseOfficial.Pages;
 
 namespace XsenseOfficial.Pages;
 

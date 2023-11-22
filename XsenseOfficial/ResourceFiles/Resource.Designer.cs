@@ -79,11 +79,11 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
-        ///   查詢類似 公司基本介紹 的當地語系化字串。
+        ///   查詢類似 公司介紹 的當地語系化字串。
         /// </summary>
-        public static string 公司基本介紹 {
+        public static string 公司介紹 {
             get {
-                return ResourceManager.GetString("公司基本介紹", resourceCulture);
+                return ResourceManager.GetString("公司介紹", resourceCulture);
             }
         }
         
@@ -115,11 +115,11 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
-        ///   查詢類似 新聞中心 的當地語系化字串。
+        ///   查詢類似 核心競爭力 的當地語系化字串。
         /// </summary>
-        public static string 新聞中心 {
+        public static string 核心競爭力 {
             get {
-                return ResourceManager.GetString("新聞中心", resourceCulture);
+                return ResourceManager.GetString("核心競爭力", resourceCulture);
             }
         }
         
@@ -129,15 +129,6 @@ namespace XsenseOfficial.ResourceFiles {
         public static string 產品 {
             get {
                 return ResourceManager.GetString("產品", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 經營團隊 的當地語系化字串。
-        /// </summary>
-        public static string 經營團隊 {
-            get {
-                return ResourceManager.GetString("經營團隊", resourceCulture);
             }
         }
         
@@ -169,11 +160,11 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
-        ///   查詢類似 關於艾格生 的當地語系化字串。
+        ///   查詢類似 關於我們 的當地語系化字串。
         /// </summary>
-        public static string 關於艾格生 {
+        public static string 關於我們 {
             get {
-                return ResourceManager.GetString("關於艾格生", resourceCulture);
+                return ResourceManager.GetString("關於我們", resourceCulture);
             }
         }
         

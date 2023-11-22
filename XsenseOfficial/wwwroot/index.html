@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8" />
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:description" content="" />
     <meta property="og:image" content="" />
@@ -22,20 +21,15 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js" defer></script>
     <script type="text/javascript" src="js/bootstrap.js" defer></script>
-    <script defer>
-        Blazor.start().then(function () {
-            var customScript = document.createElement('script');
-            customScript.setAttribute('src', 'js/scripts.js');
-            document.head.appendChild(customScript);
-        });
-    </script>
+    <script type="text/javascript" src="js/scripts.js" defer></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js" defer></script>
 
     <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="css/swiper-bundle.min.css" rel="stylesheet" />
-    <link href="css/bootstrap/bootstrap-icons.css" rel="stylesheet" />
     <link href="XsenseOfficial.styles.css" rel="stylesheet" />
+
+    <script>Blazor.start();</script>
 </head>
 
 <body>

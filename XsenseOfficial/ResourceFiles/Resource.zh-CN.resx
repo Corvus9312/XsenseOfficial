@@ -125,8 +125,8 @@
     <value>企业永续发展</value>
     <comment>Menu</comment>
   </data>
-  <data name="公司基本介紹" xml:space="preserve">
-    <value>公司基本介紹</value>
+  <data name="公司介紹" xml:space="preserve">
+    <value>公司介紹</value>
     <comment>About Sub Item</comment>
   </data>
   <data name="公司經營項目" xml:space="preserve">
@@ -141,17 +141,13 @@
     <value>品质政策</value>
     <comment>About Sub Item</comment>
   </data>
-  <data name="新聞中心" xml:space="preserve">
-    <value>新闻中心</value>
-    <comment>Menu</comment>
+  <data name="核心競爭力" xml:space="preserve">
+    <value>核心競爭力</value>
+    <comment>About Sub Item</comment>
   </data>
   <data name="產品" xml:space="preserve">
     <value>产品/技术/应用</value>
     <comment>Menu</comment>
-  </data>
-  <data name="經營團隊" xml:space="preserve">
-    <value>经营团队</value>
-    <comment>About Sub Item</comment>
   </data>
   <data name="聯絡我們" xml:space="preserve">
     <value>联络我们</value>
@@ -165,7 +161,7 @@
     <value>里程碑</value>
     <comment>About Sub Item</comment>
   </data>
-  <data name="關於艾格生" xml:space="preserve">
+  <data name="關於我們" xml:space="preserve">
     <value>关于艾格生</value>
     <comment>Menu</comment>
   </data>

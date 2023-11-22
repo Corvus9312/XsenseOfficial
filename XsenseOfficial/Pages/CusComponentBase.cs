@@ -4,7 +4,7 @@ using Microsoft.JSInterop;
 using System.Globalization;
 using XsenseOfficial.ResourceFiles;
 
-namespace Xsense_Front_End.Pages;
+namespace XsenseOfficial.Pages;
 
 public class CusComponentBase : ComponentBase
 {

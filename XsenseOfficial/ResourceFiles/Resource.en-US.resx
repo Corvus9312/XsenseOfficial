@@ -125,7 +125,7 @@
     <value>Enterprise Sustainable</value>
     <comment>Menu</comment>
   </data>
-  <data name="公司基本介紹" xml:space="preserve">
+  <data name="公司介紹" xml:space="preserve">
     <value>Basic introduction of the company</value>
     <comment>About Sub Item</comment>
   </data>
@@ -141,17 +141,13 @@
     <value>Quality policy</value>
     <comment>About Sub Item</comment>
   </data>
-  <data name="新聞中心" xml:space="preserve">
-    <value>News</value>
-    <comment>Menu</comment>
+  <data name="核心競爭力" xml:space="preserve">
+    <value>Core competence</value>
+    <comment>About Sub Item</comment>
   </data>
   <data name="產品" xml:space="preserve">
     <value>Products</value>
     <comment>Menu</comment>
-  </data>
-  <data name="經營團隊" xml:space="preserve">
-    <value>Management team</value>
-    <comment>About Sub Item</comment>
   </data>
   <data name="聯絡我們" xml:space="preserve">
     <value>Contact us</value>
@@ -165,7 +161,7 @@
     <value>Milestone</value>
     <comment>About Sub Item</comment>
   </data>
-  <data name="關於艾格生" xml:space="preserve">
+  <data name="關於我們" xml:space="preserve">
     <value>About</value>
     <comment>Menu</comment>
   </data>

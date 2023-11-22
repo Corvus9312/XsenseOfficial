@@ -1,5 +1,4 @@
-﻿using Xsense_Front_End.Pages;
-using XsenseOfficial.ViewModels;
+﻿using XsenseOfficial.ViewModels;
 using XsenseOfficial_Admin.ViewModels;
 
 namespace XsenseOfficial.Pages;
@@ -7,6 +6,8 @@ namespace XsenseOfficial.Pages;
 public class AboutBase : CusComponentBase
 {
     public string Profile { get; set; } = null!;
+    public string Vision { get; set; } = null!;
+    public string Competence { get; set; } = null!;
     public string Quality { get; set; } = null!;
     public string SGS { get; set; } = null!;
 
@@ -23,6 +24,8 @@ public class AboutBase : CusComponentBase
         SetSidebarList();
 
         Profile = (await HttpClient.GetStringAsync(Path.Combine(Navigator.BaseUri, "templates", "about", $"Profile.{CultureInfo.Name}.html"))).Replace("{{BaseUri}}", Navigator.BaseUri);
+        Vision = (await HttpClient.GetStringAsync(Path.Combine(Navigator.BaseUri, "templates", "about", $"Vision.{CultureInfo.Name}.html"))).Replace("{{BaseUri}}", Navigator.BaseUri);
+        Competence = (await HttpClient.GetStringAsync(Path.Combine(Navigator.BaseUri, "templates", "about", $"Competence.{CultureInfo.Name}.html"))).Replace("{{BaseUri}}", Navigator.BaseUri);
         MileStones = new()
         {
             new() { Time = "2014-10", EventTitle = "Team up", Content = "成員來自學界，醫材，電子，微機電，與半導體業界優秀人才。" },
@@ -34,7 +37,6 @@ public class AboutBase : CusComponentBase
             new() { Time = "2021-03", EventTitle = "成為光罩子公司", Content = "成為台灣光罩子公司" },
             new() { Time = "2021-06", EventTitle = "熱沉量產", Content = "EEL熱沉量產出貨" },
             new() { Time = "2023-06", EventTitle = "熱沉出貨累計1500萬顆", Content = "EEL熱沉出貨累計突破1500萬顆" },
-
         };
         Quality = (await HttpClient.GetStringAsync(Path.Combine(Navigator.BaseUri, "templates", "about", $"Quality.{CultureInfo.Name}.html"))).Replace("{{BaseUri}}", Navigator.BaseUri);
         SGS = (await HttpClient.GetStringAsync(Path.Combine(Navigator.BaseUri, "templates", "about", $"SGS.{CultureInfo.Name}.html"))).Replace("{{BaseUri}}", Navigator.BaseUri);
@@ -49,6 +51,11 @@ public class AboutBase : CusComponentBase
                 {
                     Title = Localizer["公司基本介紹"],
                     Href = "javascript:BlazorScrollToId('profile')"
+                },
+                new ()
+                {
+                    Title = Localizer["核心競爭力"],
+                    Href = "javascript:BlazorScrollToId('competence')",
                 },
                 new ()
                 {

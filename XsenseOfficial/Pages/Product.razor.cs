@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Xsense_Front_End.Pages;
+using XsenseOfficial.Pages;
 using XsenseOfficial.ViewModels;
 using static XsenseOfficial.Enums;
 
@@ -65,6 +65,11 @@ public class ProductBase : CusComponentBase
                 ProductVM.Title = ProductType.高頻元件用.ToString();
                 ProductVM.Content = (await HttpClient.GetStringAsync(Path.Combine(Navigator.BaseUri, "templates", "product", "SubMount", $"HighFrequencyDeviceSubMount.{CultureInfo.Name}.html"))).Replace("{{BaseUri}}", Navigator.BaseUri);
                 break;
+            case ProductType.功率元件:
+                PageTitle = $"{Localizer["艾格生科技"]} - {ProductType.功率元件}";
+                ProductVM.Title = ProductType.功率元件.ToString();
+                ProductVM.Content = (await HttpClient.GetStringAsync(Path.Combine(Navigator.BaseUri, "templates", "product", "SubMount", $"PowerDeviceSubMount.{CultureInfo.Name}.html"))).Replace("{{BaseUri}}", Navigator.BaseUri);
+                break;
             case ProductType.Foundry:
                 PageTitle = $"{Localizer["艾格生科技"]} - {ProductType.Foundry}";
                 break;
@@ -114,27 +119,32 @@ public class ProductBase : CusComponentBase
                         }
                     }
                 },
+                new()
+                {
+                    Title = Localizer["功率元件"],
+                    Href = "Product/3"
+                },
                 new ()
                 {
                     Title = Localizer["代工服務"],
-                    Href = "Product/3",
+                    Href = "Product/4",
                     Disabled = true,
                     SubSidebars = new()
                     {
                         new()
                         {
                             Title = Localizer["金錫合金鍍膜"],
-                            Href = "Product/4"
-                        },
-                        new()
-                        {
-                            Title = Localizer["薄膜金屬化加工"],
                             Href = "Product/5"
                         },
                         new()
                         {
-                            Title = Localizer["黃光.蝕刻製程加工"],
+                            Title = Localizer["薄膜金屬化加工"],
                             Href = "Product/6"
+                        },
+                        new()
+                        {
+                            Title = Localizer["黃光.蝕刻製程加工"],
+                            Href = "Product/7"
                         }
                     }
                 }
