@@ -5,7 +5,6 @@ namespace XsenseOfficial.Components.Pages;
 
 public class AboutBase : CusComponentBase
 {
-
     public List<MileStoneVM> MileStones { get; set; } = new();
 
     public List<SidebarVM> Sidebars { get; set; } = new();
@@ -36,27 +35,27 @@ public class AboutBase : CusComponentBase
     {
         Sidebars =
             [
-                new ()
+                new()
                 {
                     Title = "公司介紹",
                     Href = "javascript:BlazorScrollToId('profile')"
                 },
-                new ()
+                new()
                 {
                     Title = "核心競爭力",
                     Href = "javascript:BlazorScrollToId('competence')",
                 },
-                new ()
+                new()
                 {
                     Title = "里程碑",
                     Href = "javascript:BlazorScrollToId('milestone')",
                 },
-                new ()
+                new()
                 {
                     Title = "品質政策",
                     Href = "javascript:BlazorScrollToId('quality')",
                 },
-                new ()
+                new()
                 {
                     Title = "SGS RoHS ISO",
                     Href = "javascript:BlazorScrollToId('sgs')",

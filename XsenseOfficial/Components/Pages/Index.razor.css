@@ -11,9 +11,6 @@
     .apply-list li {
         float: left;
         width: 20vw;
-        background-size: cover;
-        background-position: center top;
-        background-repeat: no-repeat;
         position: relative;
         overflow: hidden;
     }
@@ -21,9 +18,9 @@
 .apply-title {
     position: absolute;
     color: white;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
-    bottom: 8vh;
+    bottom: 12vh;
     left: 10%;
 }
 
@@ -32,12 +29,12 @@
     color: white;
     font-size: 24px;
     font-weight: bold;
-    bottom: 1vh;
+    bottom: 2vh;
     right: 5%;
     padding-left: 50px;
 }
 
-    .apply-more::after {
+    .apply-more::before {
         content: "";
         position: absolute;
         background: white;

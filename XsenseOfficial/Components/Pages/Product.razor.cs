@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using System.Globalization;
 using XsenseOfficial.ViewModels;
 using static XsenseOfficial.Enums;
 
@@ -55,17 +56,17 @@ public class ProductBase : CusComponentBase
             case ProductType.邊射型雷射用:
                 PageTitle = $"艾格生科技 - {ProductType.邊射型雷射用}";
                 ProductVM.Title = ProductType.邊射型雷射用.ToString();
-                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "SubMount", $"MetalEdgeEmittingLaserSubMount.{CultureInfo.Name}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
+                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "SubMount", $"MetalEdgeEmittingLaserSubMount.{CultureInfo.CurrentCulture}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
                 break;
             case ProductType.高頻元件用:
                 PageTitle = $"艾格生科技 - {ProductType.高頻元件用}";
                 ProductVM.Title = ProductType.高頻元件用.ToString(); 
-                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "SubMount", $"HighFrequencyDeviceSubMount.{CultureInfo.Name}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
+                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "SubMount", $"HighFrequencyDeviceSubMount.{CultureInfo.CurrentCulture}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
                 break;
             case ProductType.功率元件:
                 PageTitle = $"艾格生科技 - {ProductType.功率元件}";
                 ProductVM.Title = ProductType.功率元件.ToString(); 
-                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "SubMount", $"PowerDeviceSubMount.{CultureInfo.Name}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
+                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "SubMount", $"PowerDeviceSubMount.{CultureInfo.CurrentCulture}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
                 break;
             case ProductType.Foundry:
                 PageTitle = $"艾格生科技 - {ProductType.Foundry}";
@@ -73,17 +74,17 @@ public class ProductBase : CusComponentBase
             case ProductType.金錫合金鍍膜:
                 PageTitle = $"艾格生科技 - {ProductType.金錫合金鍍膜}";
                 ProductVM.Title = "金錫合金鍍膜 (AuSn)";
-                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "FoundryService", $"1.{CultureInfo.Name}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
+                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "FoundryService", $"1.{CultureInfo.CurrentCulture}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
                 break;
             case ProductType.薄膜金屬化加工:
                 PageTitle = $"艾格生科技 - {ProductType.薄膜金屬化加工}";
                 ProductVM.Title = "薄膜金屬化加工(Ni , Au, Pt…)";
-                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "FoundryService", $"3.{CultureInfo.Name}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
+                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "FoundryService", $"3.{CultureInfo.CurrentCulture}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
                 break;
             case ProductType.黃光_蝕刻製程:
                 PageTitle = $"艾格生科技 - {ProductType.黃光_蝕刻製程}";
                 ProductVM.Title = "黃光.蝕刻製程: (Wafer size : 4”~8”)";
-                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "FoundryService", $"2.{CultureInfo.Name}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
+                ProductVM.Content = File.ReadAllText(Path.Combine(fileFolder, "FoundryService", $"2.{CultureInfo.CurrentCulture}.html")).Replace("{{BaseUri}}", Navigator.BaseUri);
                 break;
             default:
                 break;
