@@ -1,0 +1,17 @@
+﻿@page "/Product/{TypeID:int}"
+@inherits ProductDetailBase
+
+<PageTitle>@PageTitle</PageTitle>
+
+<FixedMenu Sidebars="Sidebars" Styles="top: 20vh; background-size: 30px 400px;" />
+
+<div class="container mt-4" style="width: 90%">
+    <section id="@ProductVM.Title">
+        <div class="row text-center">
+            <h1 class="fs-1 fw-bolder">@ProductVM.Title</h1>
+        </div>
+        <div class="mt-2">
+            @((MarkupString)@ProductVM.Content)
+        </div>
+    </section>
+</div>

@@ -1,0 +1,27 @@
+﻿a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60vw;
+    height: 2px;
+    background: radial-gradient(ellipse at center, #a5a5a5, #ffffff);
+    transition: 0.3s;
+    margin-left: -30vw;
+}
+
+.product-title {
+    margin: 3rem 0 0 0;
+    padding: 0 3rem;
+}
+
+.product {
+    padding: 2rem 5rem;
+}
+
+.product-text {
+    padding: 2rem 0;
+}
+
+img {
+    margin: 0 4rem;
+}

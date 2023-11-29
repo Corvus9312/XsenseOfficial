@@ -13,8 +13,11 @@ public class IndexBase : CusComponentBase
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await JsRuntime.InvokeVoidAsync("SetSwiper");
-
         await base.OnAfterRenderAsync(firstRender);
+
+        if (firstRender)
+        {
+            await JsRuntime.InvokeVoidAsync("SetSwiper");
+        }
     }
 }

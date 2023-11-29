@@ -19,12 +19,4 @@ public class CusComponentBase : ComponentBase
     public string EnvName => Configuration["Env"] ?? string.Empty;
 
     public string BackEndUrl => Configuration["BackEndUrl"] ?? string.Empty;
-
-    public CultureInfo CultureInfo = new("zh-TW");
-
-    //protected override async Task OnInitializedAsync()
-    //{
-    //    var result = await JsRuntime.InvokeAsync<string>("blazorCulture.get");
-    //    CultureInfo = string.IsNullOrWhiteSpace(result) ? new CultureInfo("zh-TW") : new CultureInfo(result);
-    //}
 }

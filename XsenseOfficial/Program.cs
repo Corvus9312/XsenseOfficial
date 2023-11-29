@@ -8,6 +8,8 @@ internal class Program
 
         var services = builder.Services;
 
+        
+
         // Add services to the container.
         services.AddRazorComponents()
             .AddInteractiveServerComponents();
@@ -26,6 +28,8 @@ internal class Program
         }
 
         app.UseHttpsRedirection();
+
+        app.UseRequestLocalization("zh-TW");
 
         app.UseStaticFiles();
         app.UseAntiforgery();
