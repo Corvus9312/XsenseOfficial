@@ -1,9 +1,9 @@
-﻿@page "/join"
+﻿@page "/{Language}/join"
 @inherits JoinUsBase
 
-<article class="container-fluid mt-4 p-0" style="background-color: #F5F7F9;">
+<article class="container-fluid mt-4 p-0 pb-3" style="background-color: #F5F7F9;">
     <div class="row text-center bg-white">
-        <h1 class="fs-1 fw-bolder">加入我們</h1>
+        <h1 class="fs-1 fw-bolder">@Localizer["加入我們"]</h1>
     </div>
     <section id="production" class="p-0 w-100 bg-white">
         <div class="container text-center py-3">

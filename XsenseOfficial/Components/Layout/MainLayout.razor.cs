@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Localization;
 using Microsoft.JSInterop;
 using System.Globalization;
+using XsenseOfficial.Localizers;
+using XsenseOfficial.ResourceFiles;
 
 namespace XsenseOfficial.Shared;
 
@@ -10,14 +13,11 @@ public class MainLayoutBase : LayoutComponentBase
 
     [Inject] public IJSRuntime JsRuntime { get; set; } = null!;
 
-    public bool IsLoadCompleted = false;
+    [Inject] public MultilingualLocalizer MultilingualLocalizer { get; set; } = null!;
 
-    public List<CultureInfo> SupportedCultures { get; set; } =
-        [ 
-            new CultureInfo("zh-TW"),
-            new CultureInfo("zh-CN"), 
-            new CultureInfo("en-US") 
-        ];
+    [Inject] public IStringLocalizer<Multilingual> Localizer { get; set; } = null!;
+
+    public bool IsLoadCompleted = false;
 
     public CultureInfo Culture
     {
@@ -26,9 +26,7 @@ public class MainLayoutBase : LayoutComponentBase
         {
             if (CultureInfo.CurrentCulture != value)
             {
-                var js = (IJSInProcessRuntime)JsRuntime;
-                js.InvokeVoid("blazorCulture.set", value.Name);
-                var url = Nav.Uri.Contains('#') ? Nav.Uri.Remove(Nav.Uri.IndexOf('#')) : Nav.Uri;
+                var url = Nav.Uri.Replace(CultureInfo.CurrentCulture.Name, value.Name);
                 Nav.NavigateTo(url, true);
             }
         }

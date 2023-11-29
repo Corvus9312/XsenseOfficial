@@ -11,44 +11,121 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ResourceFiles\" />
+    <Compile Update="ResourceFiles\Multilingual.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Multilingual.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <Content Update="Components\Layout\MainLayout.razor">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
     </Content>
+    <Content Update="Templates\Abouts\MileStones.zh-CN.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Templates\Abouts\MileStones.zh-TW.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Templates\Products\Product.zh-CN.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Templates\Products\Product.zh-TW.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Templates\Products\FoundryService\1.zh-TW.html">
+    <EmbeddedResource Update="ResourceFiles\Multilingual.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Multilingual.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Templates\Abouts\Competence.zh-CN.Html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Products\FoundryService\2.zh-TW.html">
+    <None Update="Templates\Abouts\Competence.zh-TW.Html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Products\FoundryService\3.zh-TW.html">
+    <None Update="Templates\Abouts\Profile.zh-CN.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Products\SubMount\HighFrequencyDeviceSubMount.en-US.html">
+    <None Update="Templates\Abouts\Profile.zh-TW.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Products\SubMount\HighFrequencyDeviceSubMount.zh-CN.html">
+    <None Update="Templates\Abouts\vision.zh-CN.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Products\SubMount\HighFrequencyDeviceSubMount.zh-TW.html">
+    <None Update="Templates\Abouts\vision.zh-TW.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Products\SubMount\MetalEdgeEmittingLaserSubMount.en-US.html">
+    <None Update="Templates\Contact\ContactForm.zh-CN.Html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Products\SubMount\MetalEdgeEmittingLaserSubMount.zh-CN.html">
+    <None Update="Templates\Contact\ContactForm.zh-TW.Html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Products\SubMount\MetalEdgeEmittingLaserSubMount.zh-TW.html">
+    <None Update="Templates\Contact\ContactInfo.zh-CN.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Products\SubMount\PowerDeviceSubMount.zh-TW.html">
+    <None Update="Templates\Contact\ContactInfo.zh-TW.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\EnterpriseSustainables\ConflictMetal.zh-CN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\EnterpriseSustainables\ConflictMetal.zh-TW.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\EnterpriseSustainables\ManagePolicy.zh-CN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\EnterpriseSustainables\ManagePolicy.zh-TW.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\EnterpriseSustainables\SupplierManagement.zh-CN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\EnterpriseSustainables\SupplierManagement.zh-TW.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Foundry\1.zh-CN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Foundry\1.zh-TW.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Foundry\2.zh-CN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Foundry\2.zh-TW.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Foundry\3.zh-CN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Foundry\3.zh-TW.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Sub-Mount\HighFrequencyDevice.zh-CN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Sub-Mount\HighFrequencyDevice.zh-TW.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Sub-Mount\MetalEdgeEmittingLaser.zh-CN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Sub-Mount\MetalEdgeEmittingLaser.zh-TW.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Sub-Mount\PowerDevice.zh-CN.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Products\Sub-Mount\PowerDevice.zh-TW.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

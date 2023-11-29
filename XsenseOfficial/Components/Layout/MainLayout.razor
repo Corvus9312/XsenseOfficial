@@ -7,7 +7,7 @@
     <main class="flex-shrink-0">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/@Culture.Name/Index">
                     <img src="/images/logo.png" alt="Xense" style="width: 15vw; min-width: 200px;" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#xsenseNavbar" aria-controls="xsenseNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,28 +16,28 @@
                 <div class="collapse navbar-collapse" id="xsenseNavbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/about">關於艾格生</a>
+                            <a class="nav-link active" aria-current="page" href="/@Culture.Name/about">@Localizer["關於我們"]</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="/product">產品中心</a>
+                            <a class="nav-link active" aria-current="page" href="/@Culture.Name/product">@Localizer["產品中心"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/enterpriseSustainable">企業永續發展</a>
+                            <a class="nav-link active" aria-current="page" href="/@Culture.Name/enterpriseSustainable">@Localizer["企業永續經營"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/join">加入我們</a>
+                            <a class="nav-link active" aria-current="page" href="/@Culture.Name/join">@Localizer["加入我們"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/contact">聯絡我們</a>
+                            <a class="nav-link active" aria-current="page" href="/@Culture.Name/contact">@Localizer["聯絡我們"]</a>
                         </li>
-                        @* <li class="nav-item">
+                        <li class="nav-item">
                             <select @bind="Culture" class="form-select" style="background-color: transparent;">
-                                @foreach (var culture in SupportedCultures)
+                                @foreach (var culture in MultilingualLocalizer.SupportedCultures)
                                 {
                                     <option value="@culture">@culture.Name</option>
                                 }
                             </select>
-                        </li> *@
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 <br />
                 Tel:+886-37-580079　　Fax:+886-37-580393　　E-mail:<a href="MailTo:xservice@xsensetw.com">xservice@xsensetw.com</a>
                 <br />
-                Address : 350401 新竹科學園區苗栗縣竹南鎮科北一路21號3樓 
+                Address : @Localizer["Address"]
             </p>
         </div>
     </footer>

@@ -1,0 +1,55 @@
+﻿@font-face {
+    font-family: "GenSenRounded-B";
+    src: url("../fonts/GenSenRounded/GenSenRounded-B.ttc") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GenSenRounded-EL";
+    src: url("../fonts/GenSenRounded/GenSenRounded-EL.ttc") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GenSenRounded-H";
+    src: url("../fonts/GenSenRounded/GenSenRounded-H.ttc") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GenSenRounded-L";
+    src: url("../fonts/GenSenRounded/GenSenRounded-L.ttc") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GenSenRounded-M";
+    src: url("../fonts/GenSenRounded/GenSenRounded-M.ttc") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GenSenRounded-R";
+    src: url("../fonts/GenSenRounded/GenSenRounded-R.ttc") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Iansui-Regular";
+    src: url("../fonts/Iansui-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "jf-openhuninn-2.0";
+    src: url("../fonts/jf-openhuninn-2.0.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

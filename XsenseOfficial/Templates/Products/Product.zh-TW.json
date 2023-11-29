@@ -1,0 +1,59 @@
+[
+  {
+    "Category": "Sub-Mount",
+    "Name": "散熱基板",
+    "Products": [
+      {
+        "Serial": 1,
+        "Name": "MetalEdgeEmittingLaser",
+        "ProductName": "邊射型雷射用",
+        "SideBarName": "邊射型雷射用",
+        "Description": "Metal/Insulation-substrate/Metal三層構造設計係為處理高功率雷射晶片散熱問題的解決方案，同時具備良好的導熱性和絕緣性。",
+        "ImageUrl": "/images/product/MetalEdge6.png"
+      },
+      {
+        "Serial": 2,
+        "Name": "HighFrequencyDevice",
+        "ProductName": "高頻元件用",
+        "SideBarName": "高頻元件用",
+        "Description": "獨特金屬成膜技術搭配客製化材枓夾層、通孔及低介電損耗製作，可提供高頻、高速、低阻抗與良好元件壽命週期之訊息傳遞架構，以確保訊息穩定性及完整性。",
+        "ImageUrl": "/images/product/wafer1.png"
+      },
+      {
+        "Serial": 3,
+        "Name": "PowerDevice",
+        "ProductName": "功率元件",
+        "SideBarName": "功率元件",
+        "Description": "Metal/Insulation-substrate/Metal三層構造設計係為處理功率元件散熱問題的解決方案，同時具備良好的導熱性和耐高壓絕緣性等優點。",
+        "ImageUrl": "/images/product/PowerDevice7.png"
+      }
+    ]
+  },
+  {
+    "Category": "Foundry",
+    "Name": "代工服務",
+    "Products": [
+      {
+        "Serial": 5,
+        "Name": "1",
+        "ProductName": "金錫合金鍍膜(AuSn)",
+        "SideBarName": "金錫合金鍍膜",
+        "Description": "金錫合金共晶的電鍍技術用於半導體封測及電子業等產業已多年。主要是金錫合金鍍層具備下列優良的物理性能：抗腐蝕性、導電性與導熱性佳、無鉛化且共熔點低 (~300 ℃以下)、材料表面氧化程度低。由於Au-Sn共晶面降低金的熔點增加其可焊性。可應用在電子產業封裝材料、大功率LED、UVC LED、微電子元件等領域。"
+      },
+      {
+        "Serial": 6,
+        "Name": "2",
+        "ProductName": "薄膜金屬化加工(Ni , Au, Pt…)",
+        "SideBarName": "薄膜金屬化加工",
+        "Description": "可依其產品線路設計的不同，或是各種金屬材料特性之間的差異來製作出各種薄膜產品，其應用範圍包括：薄膜靜電抑制器、薄膜電阻、薄膜保險絲、薄膜微感應電阻、薄膜散熱基板、薄膜高頻電感等，亦可依客製化要求作薄膜製程加工。"
+      },
+      {
+        "Serial": 7,
+        "Name": "3",
+        "ProductName": "黃光.蝕刻製程加工(Wafer size : 4”~8”)",
+        "SideBarName": "黃光.蝕刻製程加工",
+        "Description": ""
+      }
+    ]
+  }
+]

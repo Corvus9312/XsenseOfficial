@@ -1,11 +1,11 @@
-﻿@page "/Product/{TypeID:int}"
+﻿@page "/{Language}/Product/{TypeID:int}"
 @inherits ProductDetailBase
 
-<PageTitle>@PageTitle</PageTitle>
+<PageTitle>@Localizer["公司名稱"] - @ProductVM.Title</PageTitle>
 
 <FixedMenu Sidebars="Sidebars" Styles="top: 20vh; background-size: 30px 400px;" />
 
-<div class="container mt-4" style="width: 90%">
+<div class="container mt-4 pb-3" style="width: 90%">
     <section id="@ProductVM.Title">
         <div class="row text-center">
             <h1 class="fs-1 fw-bolder">@ProductVM.Title</h1>
