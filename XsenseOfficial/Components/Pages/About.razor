@@ -10,19 +10,19 @@
         <h1 class="fs-1 fw-bolder">@Localizer["關於我們"]</h1>
     </div>
     <div class="row">
-        <section id="profile" class="mt-4">
+        <section id="profile" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["公司介紹"]</h2>
             @((MarkupString)ProfileHtml)
         </section>
-        <section id="vision" class="mt-4">
+        <section id="vision" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["願景"]</h2>
-            @((MarkupString)VisionHtml)
+            <img src=@VisionImgUrl style="width: 100%;" />
         </section>
-        <section id="competence" class="mt-4">
+        <section id="competence" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["核心競爭力"]</h2>
             @((MarkupString)CompetenceHtml)
         </section>
-        <section id="milestone" class="mt-4">
+        <section id="milestone" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["里程碑"]</h2>
             <div class="row align-middle mt-4">
                 <ul class="timeline timeline-centered">
@@ -42,13 +42,13 @@
                 </ul>
             </div>
         </section>
-        <section id="quality" class="mt-4">
+        <section id="quality" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["品質政策"]</h2>
             <div class="text-center mt-2">
                 <img src=@QualityImgUrl style="width: 75%;" />
             </div>
         </section>
-        <section id="license" class="mt-4">
+        <section id="license" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["相關證照"]</h2>
             <div class="row align-middle m-2">
                 <div class="col-lg text-center">

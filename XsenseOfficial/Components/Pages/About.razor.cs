@@ -9,7 +9,7 @@ public class AboutBase : CusComponentBase
 {
     public string ProfileHtml { get; set; } = string.Empty;
 
-    public string VisionHtml { get; set; } = string.Empty;
+    public string VisionImgUrl => $"/images/about/Vision.{CultureInfo.CurrentCulture.Name}.png";
 
     public string CompetenceHtml { get; set; } = string.Empty;
 
@@ -30,7 +30,7 @@ public class AboutBase : CusComponentBase
         var fileFolder = Path.Combine(Environment.ContentRootPath, "Templates", "Abouts");
 
         ProfileHtml = File.ReadAllText(Path.Combine(fileFolder, $"Profile.{CultureInfo.CurrentCulture.Name}.html"));
-        VisionHtml = File.ReadAllText(Path.Combine(fileFolder, $"Vision.{CultureInfo.CurrentCulture.Name}.html"));
+        
         CompetenceHtml = File.ReadAllText(Path.Combine(fileFolder, $"Competence.{CultureInfo.CurrentCulture.Name}.html"));
 
         var mileStone = File.ReadAllText(Path.Combine(fileFolder, $"MileStones.{CultureInfo.CurrentCulture.Name}.json"));

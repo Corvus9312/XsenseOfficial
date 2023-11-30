@@ -1,6 +1,8 @@
 ﻿@font-face {
     font-family: "GenSenRounded-B";
-    src: url("../fonts/GenSenRounded/GenSenRounded-B.ttc") format("truetype");
+    src: url("../fonts/GenSenRounded/GenSenRounded-B.ttc") format(collection), 
+        url("../fonts/GenSenRounded/GenSenRounded-B-TW.ttf") format('truetype'),
+        url("../fonts/GenSenRounded/GenSenRounded-B-JP.ttf") format('truetype');
     font-style: normal;
     font-weight: normal;
 }

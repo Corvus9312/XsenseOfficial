@@ -20,7 +20,7 @@ public class MultilingualMiddleware(RequestDelegate next)
         {
             string language = route.Segments[1].TrimEnd('/');
 
-            if (multilingual.SupportedCultures.Any(x => x.Name.Equals(language)))
+            if (multilingual.SupportedCultures.Any(x => x.Culture.Name.Equals(language)))
             {
                 var redirect = !CultureInfo.CurrentCulture.Name.Equals(language);
 
