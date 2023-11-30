@@ -3,18 +3,18 @@
 
 <PageTitle>@Localizer["公司名稱"]</PageTitle>
 
-<div class="swiper mySwiper">
+<article id="index" class="swiper mySwiper">
     <div class="swiper-wrapper">
         @foreach (var swiper in SwiperImgs)
         {
             <div class="swiper-slide">
-                <img src=@swiper style="height: 100%; width: 100%" />
+                <img src=@swiper />
             </div>
         }
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-</div>
+</article>
 @* 
 <div>
     <img src="/images/index/index1.png" style="width: 100%" />

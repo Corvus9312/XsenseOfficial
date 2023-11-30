@@ -39,4 +39,9 @@
 
 img {
     margin: 0 4rem;
+    max-width: 250px;
+}
+
+.btn {
+    /*border-radius: revert;*/
 }

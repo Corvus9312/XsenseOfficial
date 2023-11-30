@@ -1,3 +1,9 @@
+@media(min-width: 541px) {
+    #quality-img {
+        width: 75%;
+    }
+}
+
 .timeline {
     line-height: 1.4em;
     list-style: none;

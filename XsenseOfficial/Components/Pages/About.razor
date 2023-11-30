@@ -5,7 +5,7 @@
 
 <FixedMenu Sidebars="Sidebars" Styles="top: 30vh; background-size: 30px 325px;" />
 
-<div class="container mt-4 pb-3" style="width: 90%">
+<article id="about" class="container mt-4 pb-3">
     <div class="row text-center">
         <h1 class="fs-1 fw-bolder">@Localizer["關於我們"]</h1>
     </div>
@@ -16,7 +16,7 @@
         </section>
         <section id="vision" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["願景"]</h2>
-            <img src=@VisionImgUrl style="width: 100%;" />
+            <img src=@VisionImgUrl />
         </section>
         <section id="competence" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["核心競爭力"]</h2>
@@ -45,23 +45,23 @@
         <section id="quality" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["品質政策"]</h2>
             <div class="text-center mt-2">
-                <img src=@QualityImgUrl style="width: 75%;" />
+                <img id="quality-img" src=@QualityImgUrl />
             </div>
         </section>
         <section id="license" class="my-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["相關證照"]</h2>
             <div class="row align-middle m-2">
                 <div class="col-lg text-center">
-                    <img src="/images/about/ISO9001.png" style="width: 100%" />
+                    <img src="/images/about/ISO9001.png" />
                     <br />
                     <span>ISO9001 證照</span>
                 </div>
                 <div class="col-lg text-center">
-                    <img src="/images/about/RoHS.png" style="width: 100%" />
+                    <img src="/images/about/RoHS.png" />
                     <br />
                     <span>RoHS 報告</span>
                 </div>
             </div>
         </section>
     </div>
-</div>
+</article>
