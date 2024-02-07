@@ -5,6 +5,7 @@
         url("../fonts/GenSenRounded/GenSenRounded-B-JP.ttf") format('truetype');
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {

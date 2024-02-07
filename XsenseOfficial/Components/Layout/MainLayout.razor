@@ -31,12 +31,14 @@
                             <a class="nav-link active" aria-current="page" href="/@Culture.Name/contact">@Localizer["聯絡我們"]</a>
                         </li>
                         <li class="nav-item">
-                            <select @bind="Culture" class="form-select" style="background-color: transparent;">
-                                @foreach (var culture in MultilingualLocalizer.SupportedCultures)
-                                {
-                                    <option value="@culture.Culture">@culture.Name</option>
-                                }
-                            </select>
+                            <label>
+                                <select id="CultureSelect" @bind="Culture" class="form-select" style="background-color: transparent;">
+                                    @foreach (var culture in MultilingualLocalizer.SupportedCultures)
+                                    {
+                                        <option value="@culture.Culture">@culture.Name</option>
+                                    }
+                                </select>
+                            </label>
                         </li>
                     </ul>
                 </div>

@@ -40,7 +40,7 @@
                                     @if (product.Serial % 2 == 1)
                                     {
                                         <div class="col-lg text-end">
-                                            <img src=@product.ImageUrl />
+                                            <img src=@product.ImageUrl alt=@product.ProductName />
                                         </div>
                                         <div class="col-lg text-start product-text">
                                             <p class="fs-3 text-success fw-bold">@product.ProductName</p>
@@ -60,7 +60,7 @@
                                             <input type="button" class="btn btn-outline-secondary float-start mt-2" value=@Localizer["了解更多"] />
                                         </div>
                                         <div class="col-lg text-start">
-                                            <img src=@product.ImageUrl />
+                                            <img src=@product.ImageUrl alt=@product.ProductName />
                                         </div>
                                     }
                                 }
