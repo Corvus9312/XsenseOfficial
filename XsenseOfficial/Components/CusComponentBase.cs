@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 using Microsoft.JSInterop;
+using System.Globalization;
 using XsenseOfficial.Localizers;
 using XsenseOfficial.ResourceFiles;
 

@@ -121,13 +121,49 @@
     <value>350401 新竹科學園區苗栗縣竹南鎮科北一路21號3樓</value>
     <comment>layout</comment>
   </data>
+  <data name="ContactAdminIssue" xml:space="preserve">
+    <value>行政問題</value>
+    <comment>Contact</comment>
+  </data>
+  <data name="ContactContent" xml:space="preserve">
+    <value>內容</value>
+    <comment>Contact</comment>
+  </data>
   <data name="ContactForm" xml:space="preserve">
     <value>聯絡表單</value>
     <comment>contact</comment>
   </data>
+  <data name="ContactFormContent" xml:space="preserve">
+    <value>感謝您光臨艾格生科技股份有限公司網站，您的寶貴意見讓我們持續成長。誠摯的歡迎您來信或來電洽詢相關業務，我們將盡快提供您完整的服務，謝謝。</value>
+    <comment>Contact</comment>
+  </data>
   <data name="ContactInfo" xml:space="preserve">
     <value>聯絡資訊</value>
     <comment>contact</comment>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>姓名</value>
+    <comment>Contact</comment>
+  </data>
+  <data name="ContactOtherIssue" xml:space="preserve">
+    <value>其他問題</value>
+    <comment>Contact</comment>
+  </data>
+  <data name="ContactPhone" xml:space="preserve">
+    <value>連絡電話</value>
+    <comment>Contact</comment>
+  </data>
+  <data name="ContactProductIssue" xml:space="preserve">
+    <value>產品問題</value>
+    <comment>Contact</comment>
+  </data>
+  <data name="ContactSubject" xml:space="preserve">
+    <value>主旨</value>
+    <comment>Contact</comment>
+  </data>
+  <data name="ContactTechIssue" xml:space="preserve">
+    <value>技術問題</value>
+    <comment>Contact</comment>
   </data>
   <data name="Position" xml:space="preserve">
     <value>公司位置</value>

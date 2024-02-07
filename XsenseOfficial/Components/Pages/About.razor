@@ -1,7 +1,13 @@
 ﻿@page "/{Language}/about"
 @inherits AboutBase
 
+<HeadContent>
+    <meta property="og:title" content="@Localizer["公司名稱"] - @Localizer["關於我們"]" />
+    <meta property="og:description" content="@Localizer["關於我們"]">
+    <meta property="og:locale" content="@Language">
+</HeadContent>
 <PageTitle>@Localizer["公司名稱"] - @Localizer["關於我們"]</PageTitle>
+
 
 <FixedMenu Sidebars="Sidebars" Styles="top: 30vh; background-size: 30px 325px;" />
 

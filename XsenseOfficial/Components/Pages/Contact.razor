@@ -1,7 +1,12 @@
-﻿@page "/{Language}/Contact"
+﻿@page "/{Language}/contact"
 @inherits ContactBase
 
 <PageTitle>@Localizer["公司名稱"] - @Localizer["聯絡我們"]</PageTitle>
+<HeadContent>
+    <meta property="og:title" content="@Localizer["公司名稱"] - @Localizer["聯絡我們"]" />
+    <meta property="og:description" content="@Localizer["聯絡我們"]">
+    <meta property="og:locale" content="@Language">
+</HeadContent>
 
 <article id="contact" class="container mt-4 pb-3">
     <div class="row text-center">
@@ -14,13 +19,51 @@
     <div class="mt-4 row px-4">
         <div class="col-lg">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["ContactForm"]</h2>
-            @((MarkupString)ContactForm)
+            <div class="pe-5">
+                <p class="m-0 indent-2 ">
+                    @Localizer["ContactFormContent"]
+                </p>
+                <div class="row pt-2">
+                    <div class="col-lg">
+                        <p class="m-0">@Localizer["ContactName"]</p>
+                        <input type="text" class="form-control" @bind=MailModel.Name />
+                    </div>
+                    <div class="col-lg">
+                        <p class="m-0">Email</p>
+                        <input type="text" class="form-control" @bind=MailModel.Email />
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-lg">
+                        <p class="m-0">@Localizer["ContactPhone"]</p>
+                        <input type="text" class="form-control" @bind=MailModel.Phone />
+                    </div>
+                    <div class="col-lg">
+                        <p class="m-0">@Localizer["ContactSubject"]</p>
+                        <select class="form-select" @bind=MailModel.Subject>
+                            <option>@Localizer["ContactProductIssue"]</option>
+                            <option>@Localizer["ContactTechIssue"]</option>
+                            <option>@Localizer["ContactAdminIssue"]</option>
+                            <option>@Localizer["ContactOtherIssue"]</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-lg">
+                        <p class="m-0">@Localizer["ContactContent"]</p>
+                        <textarea type="text" class="form-control" style="height: 10em;" @bind=MailModel.body></textarea>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="d-flex justify-content-end">
+                        <input type="button" class="form-control" style="width: max-content" value="送出" @onclick=SendEmail />
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-lg px-4">
             <h2 class="fs-3 fw-bolder text-success">@Localizer["ContactInfo"]</h2>
             @((MarkupString)ContactInfo)
         </div>
     </div>
-
-
 </article>

@@ -70,6 +70,24 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
+        ///   查詢類似 行政問題 的當地語系化字串。
+        /// </summary>
+        public static string ContactAdminIssue {
+            get {
+                return ResourceManager.GetString("ContactAdminIssue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 內容 的當地語系化字串。
+        /// </summary>
+        public static string ContactContent {
+            get {
+                return ResourceManager.GetString("ContactContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 聯絡表單 的當地語系化字串。
         /// </summary>
         public static string ContactForm {
@@ -79,11 +97,74 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
+        ///   查詢類似 感謝您光臨艾格生科技股份有限公司網站，您的寶貴意見讓我們持續成長。誠摯的歡迎您來信或來電洽詢相關業務，我們將盡快提供您完整的服務，謝謝。 的當地語系化字串。
+        /// </summary>
+        public static string ContactFormContent {
+            get {
+                return ResourceManager.GetString("ContactFormContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 聯絡資訊 的當地語系化字串。
         /// </summary>
         public static string ContactInfo {
             get {
                 return ResourceManager.GetString("ContactInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 姓名 的當地語系化字串。
+        /// </summary>
+        public static string ContactName {
+            get {
+                return ResourceManager.GetString("ContactName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 其他問題 的當地語系化字串。
+        /// </summary>
+        public static string ContactOtherIssue {
+            get {
+                return ResourceManager.GetString("ContactOtherIssue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 連絡電話 的當地語系化字串。
+        /// </summary>
+        public static string ContactPhone {
+            get {
+                return ResourceManager.GetString("ContactPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 產品問題 的當地語系化字串。
+        /// </summary>
+        public static string ContactProductIssue {
+            get {
+                return ResourceManager.GetString("ContactProductIssue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 主旨 的當地語系化字串。
+        /// </summary>
+        public static string ContactSubject {
+            get {
+                return ResourceManager.GetString("ContactSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 技術問題 的當地語系化字串。
+        /// </summary>
+        public static string ContactTechIssue {
+            get {
+                return ResourceManager.GetString("ContactTechIssue", resourceCulture);
             }
         }
         

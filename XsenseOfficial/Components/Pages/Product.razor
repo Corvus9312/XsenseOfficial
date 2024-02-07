@@ -1,8 +1,13 @@
-﻿@page "/{Language}/Product"
+﻿@page "/{Language}/product"
 @using System.Globalization
 @inherits ProductBase
 
 <PageTitle>@Localizer["公司名稱"] - @Localizer["產品中心"]</PageTitle>
+<HeadContent>
+    <meta property="og:title" content="@Localizer["公司名稱"] - @Localizer["產品中心"]" />
+    <meta property="og:description" content="@Localizer["產品中心"]">
+    <meta property="og:locale" content="@Language">
+</HeadContent>
 
 <article id="product" class="container mt-4 pb-3">
     <div class="text-center">
