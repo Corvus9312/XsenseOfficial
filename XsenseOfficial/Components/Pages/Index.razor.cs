@@ -7,8 +7,8 @@ public class IndexBase : CusComponentBase
 {
     protected List<string> SwiperImgs => 
         [
-            $"/images/index/swiper1.{CultureInfo.CurrentCulture.Name}.png", 
-            $"/images/index/swiper2.{CultureInfo.CurrentCulture.Name}.png"
+            $"/images/index/swiper1.{Language}.png", 
+            $"/images/index/swiper2.{Language}.png"
         ];
 
     protected override void OnInitialized()

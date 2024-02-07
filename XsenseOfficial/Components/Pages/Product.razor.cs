@@ -14,7 +14,7 @@ public class ProductBase : CusComponentBase
 
         var fileFolder = Path.Combine(Environment.ContentRootPath, "Templates", "Products");
 
-        var productJson = File.ReadAllText(Path.Combine(fileFolder, $"Product.{CultureInfo.CurrentCulture.Name}.json"));
+        var productJson = File.ReadAllText(Path.Combine(fileFolder, $"Product.{Language}.json"));
         ProductCategorys = JsonSerializer.Deserialize<List<PorductCategoryVM>>(productJson) ?? [];
     }
 }

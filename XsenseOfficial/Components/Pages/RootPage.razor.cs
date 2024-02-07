@@ -6,6 +6,6 @@ public class RootPageBase : CusComponentBase
 {
     protected override void OnInitialized()
     {
-        Navigator.NavigateTo($"/{CultureInfo.CurrentCulture}/index");
+        Navigator.NavigateTo($"/{CultureInfo.CurrentCulture.Name}/index");
     }
 }

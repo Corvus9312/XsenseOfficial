@@ -4,6 +4,8 @@ using XsenseOfficial.ViewModels;
 using System.Globalization;
 using System.Text.Json;
 using XsenseOfficial.Models;
+using System.Xml;
+using HtmlAgilityPack;
 
 namespace XsenseOfficial.Components.Pages;
 
@@ -50,18 +52,18 @@ public class ProductDetailBase : CusComponentBase
     {
         var fileFolder = Path.Combine(Environment.ContentRootPath, "Templates", "Products");
 
-        var productJson = File.ReadAllText(Path.Combine(fileFolder, $"Product.{CultureInfo.CurrentCulture.Name}.json"));
+        var productJson = File.ReadAllText(Path.Combine(fileFolder, $"Product.{Language}.json"));
 
-        Categorys = JsonSerializer.Deserialize<List<PorductCategoryVM>>(productJson) ?? new();
+        Categorys = JsonSerializer.Deserialize<List<PorductCategoryVM>>(productJson) ?? [];
 
         Category = Categorys?.Single(x => x.Products.Select(x => x.Serial).Contains(TypeID ?? 0)) ?? new();
 
         Product = Category.Products.Single(x => x.Serial.Equals(TypeID)) ?? new();
-        var a = Path.Combine(fileFolder, Category.Category, $"{Product.Name}.{CultureInfo.CurrentCulture}.html");
+        var a = Path.Combine(fileFolder, Category.Category, $"{Product.Name}.{Language}.html");
         ProductVM = new()
         {
             Title = Product.ProductName,
-            Content = File.ReadAllText(Path.Combine(fileFolder, Category.Category, $"{Product.Name}.{CultureInfo.CurrentCulture}.html"))
+            Content = File.ReadAllText(Path.Combine(fileFolder, Category.Category, $"{Product.Name}.{Language}.html"))
         };
 
         StateHasChanged();

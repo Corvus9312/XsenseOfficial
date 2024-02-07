@@ -18,8 +18,8 @@ public class EnterpriseSustainableBase : CusComponentBase
 
         var fileFolder = Path.Combine(Environment.ContentRootPath, "Templates", "EnterpriseSustainables");
 
-        ManagePolicy = File.ReadAllText(Path.Combine(fileFolder, $"ManagePolicy.{CultureInfo.CurrentCulture.Name}.html"));
-        ConflictMetal = File.ReadAllText(Path.Combine(fileFolder, $"ConflictMetal.{CultureInfo.CurrentCulture.Name}.html"));
-        SupplierManagement = File.ReadAllText(Path.Combine(fileFolder, $"SupplierManagement.{CultureInfo.CurrentCulture.Name}.html"));
+        ManagePolicy = File.ReadAllText(Path.Combine(fileFolder, $"ManagePolicy.{Language}.html"));
+        ConflictMetal = File.ReadAllText(Path.Combine(fileFolder, $"ConflictMetal.{Language}.html"));
+        SupplierManagement = File.ReadAllText(Path.Combine(fileFolder, $"SupplierManagement.{Language}.html"));
     }
 }

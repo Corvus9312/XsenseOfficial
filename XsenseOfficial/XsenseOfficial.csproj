@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.58" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="ResourceFiles\Multilingual.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

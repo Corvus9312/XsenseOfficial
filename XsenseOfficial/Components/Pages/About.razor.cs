@@ -9,13 +9,13 @@ public class AboutBase : CusComponentBase
 {
     public string ProfileHtml { get; set; } = string.Empty;
 
-    public string VisionImgUrl => $"/images/about/Vision.{CultureInfo.CurrentCulture.Name}.png";
+    public string VisionImgUrl => $"/images/about/Vision.{Language}.png";
 
     public string CompetenceHtml { get; set; } = string.Empty;
 
     public List<MileStoneVM> MileStones { get; set; } = [];
 
-    public string QualityImgUrl => $"/images/about/Quality.{CultureInfo.CurrentCulture.Name}.png";
+    public string QualityImgUrl => $"/images/about/Quality.{Language}.png";
 
     public List<SidebarVM> Sidebars { get; set; } = [];
 
@@ -29,11 +29,11 @@ public class AboutBase : CusComponentBase
 
         var fileFolder = Path.Combine(Environment.ContentRootPath, "Templates", "Abouts");
 
-        ProfileHtml = File.ReadAllText(Path.Combine(fileFolder, $"Profile.{CultureInfo.CurrentCulture.Name}.html"));
+        ProfileHtml = File.ReadAllText(Path.Combine(fileFolder, $"Profile.{Language}.html"));
         
-        CompetenceHtml = File.ReadAllText(Path.Combine(fileFolder, $"Competence.{CultureInfo.CurrentCulture.Name}.html"));
+        CompetenceHtml = File.ReadAllText(Path.Combine(fileFolder, $"Competence.{Language}.html"));
 
-        var mileStone = File.ReadAllText(Path.Combine(fileFolder, $"MileStones.{CultureInfo.CurrentCulture.Name}.json"));
+        var mileStone = File.ReadAllText(Path.Combine(fileFolder, $"MileStones.{Language}.json"));
         MileStones = JsonSerializer.Deserialize<List<MileStoneVM>>(mileStone) ?? [];
     }
 

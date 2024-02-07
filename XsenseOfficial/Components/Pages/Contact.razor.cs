@@ -24,7 +24,7 @@ public class ContactBase : CusComponentBase
 
         var fileFolder = Path.Combine(Environment.ContentRootPath, "Templates", "Contact");
 
-        ContactInfo = File.ReadAllText(Path.Combine(fileFolder, $"ContactInfo.{CultureInfo.CurrentCulture.Name}.html"));
+        ContactInfo = File.ReadAllText(Path.Combine(fileFolder, $"ContactInfo.{Language}.html"));
 
         MailModel = new() { Subject = Localizer["ContactProductIssue"] };
 

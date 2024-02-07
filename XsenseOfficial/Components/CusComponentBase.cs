@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using HtmlAgilityPack;
+using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 using Microsoft.JSInterop;
 using System.Globalization;
@@ -28,4 +29,16 @@ public class CusComponentBase : ComponentBase
     public string EnvName => Configuration["Env"] ?? string.Empty;
 
     public string BackEndUrl => Configuration["BackEndUrl"] ?? string.Empty;
+
+    public string ReplaceHtmlTag(string descHtml)
+    {
+        HtmlDocument doc = new();
+        doc.LoadHtml(descHtml);
+
+        return doc.DocumentNode.InnerText
+            .Replace("\n", "")
+            .Replace("\r", "")
+            .Replace("\t", "")
+            .Replace(" ", "");
+    }
 }
