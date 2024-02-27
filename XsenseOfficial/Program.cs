@@ -1,6 +1,5 @@
 using XsenseOfficial.Components;
 using XsenseOfficial.Localizers;
-using XsenseOfficial.Middlewares;
 
 internal class Program
 {
@@ -10,7 +9,6 @@ internal class Program
 
         var services = builder.Services;
 
-        // Add services to the container.
         services.AddRazorComponents()
             .AddInteractiveServerComponents();
 
@@ -24,20 +22,12 @@ internal class Program
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
         {
-            //app.UseExceptionHandler("/Error", createScopeForErrors: true);
+            app.UseExceptionHandler("/Error", createScopeForErrors: true);
             app.UseHsts();
         }
 
         app.UseHttpsRedirection();
 
-        app.UseMiddleware<MultilingualMiddleware>();
-
-        string[] supportedCultures = ["zh-TW", "zh-CN", "en-US"];
-        var localizationOptions = new RequestLocalizationOptions()
-            .AddSupportedCultures(supportedCultures)
-            .AddSupportedUICultures(supportedCultures);
-
-        app.UseRequestLocalization(localizationOptions);
         app.UseStaticFiles();
         app.UseAntiforgery();
 

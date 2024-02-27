@@ -2,6 +2,7 @@
 using System.Net;
 using XsenseOfficial.Models;
 using Microsoft.JSInterop;
+using XsenseOfficial.Components.Pages.ComponetBase;
 
 namespace XsenseOfficial.Components.Pages;
 

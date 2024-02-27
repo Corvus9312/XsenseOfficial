@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using XsenseOfficial.Components.Pages.ComponetBase;
 
 namespace XsenseOfficial.Components.Pages;
 

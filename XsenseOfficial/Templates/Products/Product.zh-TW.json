@@ -9,7 +9,7 @@
         "ProductName": "邊射型雷射用",
         "SideBarName": "邊射型雷射用",
         "Description": "Metal/Insulation-substrate/Metal三層構造設計係為處理高功率雷射晶片散熱問題的解決方案，同時具備良好的導熱性和絕緣性。",
-        "ImageUrl": "/images/product/MetalEdge6.png"
+        "ImageUrl": "/images/product/MetalEdge2.webp"
       },
       {
         "Serial": 2,
@@ -17,7 +17,7 @@
         "ProductName": "高頻元件用",
         "SideBarName": "高頻元件用",
         "Description": "獨特金屬成膜技術搭配客製化材枓夾層、通孔及低介電損耗製作，可提供高頻、高速、低阻抗與良好元件壽命週期之訊息傳遞架構，以確保訊息穩定性及完整性。",
-        "ImageUrl": "/images/product/wafer1.png"
+        "ImageUrl": "/images/product/wafer1.webp"
       },
       {
         "Serial": 3,
@@ -25,7 +25,7 @@
         "ProductName": "功率元件",
         "SideBarName": "功率元件",
         "Description": "Metal/Insulation-substrate/Metal三層構造設計係為處理功率元件散熱問題的解決方案，同時具備良好的導熱性和耐高壓絕緣性等優點。",
-        "ImageUrl": "/images/product/PowerDevice7.png"
+        "ImageUrl": "/images/product/PowerDevice1.webp"
       }
     ]
   },

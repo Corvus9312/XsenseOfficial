@@ -12,15 +12,19 @@ public class MultilingualLocalizer
             new() { Name = "簡體中文", Culture = new("zh-CN") }
         ];
 
-    public void SetCulture(CultureInfo culture)
+    public CultureInfo SetCulture(CultureInfo? culture = null)
     {
-        if (SupportedCultures.Any(x => x.Culture.Name.Equals(culture.Name)))
-        {
-            CultureInfo.CurrentCulture = culture;
-            CultureInfo.CurrentUICulture = culture;
-            CultureInfo.DefaultThreadCurrentCulture = culture;
-            CultureInfo.DefaultThreadCurrentUICulture = culture;
-        }
+        culture ??= SupportedCultures.Single(x => x.DefaultLocalizer).Culture;
+
+        if (!SupportedCultures.Any(x => x.Culture.Name.Equals(culture.Name)))
+            culture ??= SupportedCultures.Single(x => x.DefaultLocalizer).Culture;
+
+        CultureInfo.CurrentCulture = culture;
+        CultureInfo.CurrentUICulture = culture;
+        CultureInfo.DefaultThreadCurrentCulture = culture;
+        CultureInfo.DefaultThreadCurrentUICulture = culture;
+
+        return culture;
     }
 
     public class CustomCultureInfo

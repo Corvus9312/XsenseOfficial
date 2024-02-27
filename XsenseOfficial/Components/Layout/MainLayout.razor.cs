@@ -26,7 +26,10 @@ public class MainLayoutBase : LayoutComponentBase
         {
             if (CultureInfo.CurrentCulture != value)
             {
-                var url = Nav.Uri.Replace(CultureInfo.CurrentCulture.Name, value.Name);
+                var uri = new Uri(Nav.Uri);
+                var lang = uri.Segments[1].Replace("/", "");
+
+                var url = $"{uri}".Replace(lang, value.Name);
                 Nav.NavigateTo(url, true);
             }
         }

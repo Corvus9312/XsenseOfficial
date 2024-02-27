@@ -1,5 +1,5 @@
 ﻿using Microsoft.JSInterop;
-using System.Globalization;
+using XsenseOfficial.Components.Pages.ComponetBase;
 
 namespace XsenseOfficial.Components.Pages;
 
@@ -7,8 +7,8 @@ public class IndexBase : CusComponentBase
 {
     protected List<string> SwiperImgs => 
         [
-            $"/images/index/swiper1.{Language}.png", 
-            $"/images/index/swiper2.{Language}.png"
+            $"/images/index/swiper1.{Language}.webp", 
+            $"/images/index/swiper2.{Language}.webp"
         ];
 
     protected override void OnInitialized()

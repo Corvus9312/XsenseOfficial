@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using XsenseOfficial.Components.Pages.ComponetBase;
 using XsenseOfficial.Models;
 using XsenseOfficial.ViewModels;
 

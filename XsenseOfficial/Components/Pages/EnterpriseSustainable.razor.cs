@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using System.Text.Json;
+using XsenseOfficial.Components.Pages.ComponetBase;
 using XsenseOfficial.ViewModels;
 
 namespace XsenseOfficial.Components.Pages;

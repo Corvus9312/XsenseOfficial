@@ -1,13 +1,10 @@
-﻿using System.Text.Json;
-using XsenseOfficial_Admin.ViewModels;
+﻿using XsenseOfficial.Components.Pages.ComponetBase;
 
 namespace XsenseOfficial.Components.Pages;
 
 public class JoinUsBase : CusComponentBase
 {
-    protected string HeadImageUrl => $"/images/joinUs/joinUsHead.{Language}.png";
-
-    protected string TrainingImageUrl => $"/images/joinUs/PersonnelTraining.{Language}.png";
+    protected string TrainingImageUrl => $"/images/joinUs/PersonnelTraining.{Language}.webp";
 
     protected string EnviromentHtml { get; set; } = string.Empty;
 

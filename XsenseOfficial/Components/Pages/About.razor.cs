@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using XsenseOfficial.Components.Pages.ComponetBase;
 using XsenseOfficial.ViewModels;
 using XsenseOfficial_Admin.ViewModels;
 
@@ -8,13 +9,13 @@ public class AboutBase : CusComponentBase
 {
     public string ProfileHtml { get; set; } = string.Empty;
 
-    public string VisionImgUrl => $"/images/about/Vision.{Language}.png";
+    public string VisionImgUrl => $"/images/about/Vision.{Language}.webp";
 
     public string CompetenceHtml { get; set; } = string.Empty;
 
     public List<MileStoneVM> MileStones { get; set; } = [];
 
-    public string QualityImgUrl => $"/images/about/Quality.{Language}.png";
+    public string QualityImgUrl => $"/images/about/Quality.{Language}.webp";
 
     public List<SidebarVM> Sidebars { get; set; } = [];
 

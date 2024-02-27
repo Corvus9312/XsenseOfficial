@@ -8,7 +8,7 @@
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="/@Culture.Name/Index">
-                    <img src="/images/logo.png" alt="Xense" style="width: 15vw; min-width: 200px;" />
+                    <img src="/images/logo.webp" alt="Xense" style="width: 15vw; min-width: 200px;" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#xsenseNavbar" aria-controls="xsenseNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,14 +31,12 @@
                             <a class="nav-link active" aria-current="page" href="/@Culture.Name/contact">@Localizer["聯絡我們"]</a>
                         </li>
                         <li class="nav-item">
-                            <label>
-                                <select id="CultureSelect" @bind="Culture" class="form-select" style="background-color: transparent;">
-                                    @foreach (var culture in MultilingualLocalizer.SupportedCultures)
-                                    {
-                                        <option value="@culture.Culture">@culture.Name</option>
-                                    }
-                                </select>
-                            </label>
+                            <select id="culture-select" @bind="Culture" class="form-select" style="background-color: transparent;" aria-label="culture">
+                                @foreach (var culture in MultilingualLocalizer.SupportedCultures)
+                                {
+                                    <option value="@culture.Culture">@culture.Name</option>
+                                }
+                            </select>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +44,7 @@
         </nav>
 
         <div class="container-fluid" style="padding: 80px 0 0 0">
-                @Body
+            @Body
         </div>
 
     </main>

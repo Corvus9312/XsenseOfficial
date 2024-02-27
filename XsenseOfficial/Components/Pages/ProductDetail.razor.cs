@@ -6,6 +6,7 @@ using System.Text.Json;
 using XsenseOfficial.Models;
 using System.Xml;
 using HtmlAgilityPack;
+using XsenseOfficial.Components.Pages.ComponetBase;
 
 namespace XsenseOfficial.Components.Pages;
 
