@@ -22,6 +22,7 @@ public class MultilingualMiddleware(RequestDelegate next)
 
             if (multilingual.SupportedCultures.Any(x => x.Culture.Name.Equals(language)))
             {
+                // 若是支援的語系，則設定語系並重新導向
                 var redirect = !CultureInfo.CurrentCulture.Name.Equals(language);
 
                 multilingual.SetCulture(new(language));
@@ -33,6 +34,20 @@ public class MultilingualMiddleware(RequestDelegate next)
 
                 if (redirect)
                     context.Response.Redirect(url);
+            }
+            else if (CultureInfo.GetCultures(CultureTypes.AllCultures & ~CultureTypes.NeutralCultures).Any(x => x.Name.Equals(language)))
+            {
+                // 若是不支援的語系，則導向預設語系
+                var defaultCulture = multilingual.SupportedCultures.Single(x => x.DefaultLocalizer).Culture.Name;
+
+                url = $"{context.Request.Scheme}://{context.Request.Host.Value}{context.Request.Path.Value?.Replace(language, defaultCulture)}";
+
+                context.Response.Cookies.Append(
+                    CookieRequestCultureProvider.DefaultCookieName,
+                    CookieRequestCultureProvider.MakeCookieValue(
+                        new RequestCulture(new CultureInfo(language), new CultureInfo(language))));
+
+                context.Response.Redirect(url);
             }
         }
 

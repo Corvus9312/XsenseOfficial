@@ -241,6 +241,15 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
+        ///   查詢類似 艾格生科技 學習發展體系 的當地語系化字串。
+        /// </summary>
+        public static string 學習發展體系 {
+            get {
+                return ResourceManager.GetString("學習發展體系", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 核心競爭力 的當地語系化字串。
         /// </summary>
         public static string 核心競爭力 {
@@ -268,7 +277,7 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
-        ///   查詢類似 SGS RoHS ISO 的當地語系化字串。
+        ///   查詢類似 相關證照 的當地語系化字串。
         /// </summary>
         public static string 相關證照 {
             get {
@@ -286,11 +295,29 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
+        ///   查詢類似 福利介紹 的當地語系化字串。
+        /// </summary>
+        public static string 福利介紹 {
+            get {
+                return ResourceManager.GetString("福利介紹", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 聯絡我們 的當地語系化字串。
         /// </summary>
         public static string 聯絡我們 {
             get {
                 return ResourceManager.GetString("聯絡我們", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 艾格生的生活 的當地語系化字串。
+        /// </summary>
+        public static string 艾格生的生活 {
+            get {
+                return ResourceManager.GetString("艾格生的生活", resourceCulture);
             }
         }
         

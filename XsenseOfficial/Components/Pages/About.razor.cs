@@ -1,5 +1,4 @@
-﻿using System.Globalization;
-using System.Text.Json;
+﻿using System.Text.Json;
 using XsenseOfficial.ViewModels;
 using XsenseOfficial_Admin.ViewModels;
 
@@ -43,6 +42,11 @@ public class AboutBase : CusComponentBase
             [
                 new()
                 {
+                    Title = "top",
+                    Href = "javascript:BlazorScrollToId('top')",
+                },
+                new()
+                {
                     Title = Localizer["公司介紹"],
                     Href = "javascript:BlazorScrollToId('profile')"
                 },
@@ -64,7 +68,7 @@ public class AboutBase : CusComponentBase
                 new()
                 {
                     Title = Localizer["相關證照"],
-                    Href = "javascript:BlazorScrollToId('sgs')",
+                    Href = "javascript:BlazorScrollToId('license')",
                 }
             ];
     }

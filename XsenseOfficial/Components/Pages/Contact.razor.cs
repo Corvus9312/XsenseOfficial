@@ -1,5 +1,4 @@
-﻿using System.Globalization;
-using System.Net.Mail;
+﻿using System.Net.Mail;
 using System.Net;
 using XsenseOfficial.Models;
 using Microsoft.JSInterop;
@@ -41,7 +40,7 @@ public class ContactBase : CusComponentBase
         msg.IsBodyHtml = false;
 
         var a = "mis@xsensetw.com";
-        var p = "Xsense123$";
+        var p = "Xsense123$$";
 
         using SmtpClient client = new()
         {

@@ -71,13 +71,17 @@ public class ProductDetailBase : CusComponentBase
 
     private void SetSideBar()
     {
-        Sidebars = Categorys
+        Sidebars.Add(new() { Title = "top", Disabled = false, Href = $"/{Language}/product" });
+
+        Sidebars.AddRange(
+            Categorys
             .Select(
                 x => new SidebarVM
                 {
                     Title = x.Name,
                     Disabled = true,
                     SubSidebars = x.Products.Select(x => new SidebarModel { Title = x.SideBarName, Href = x.Uri }).ToList()
-                }).ToList();
+                }).ToList()
+        );
     }
 }

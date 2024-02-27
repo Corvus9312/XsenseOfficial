@@ -197,6 +197,10 @@
     <value>品质政策</value>
     <comment>about</comment>
   </data>
+  <data name="學習發展體系" xml:space="preserve">
+    <value>艾格生科技 学习发展体系</value>
+    <comment>JoinUs</comment>
+  </data>
   <data name="核心競爭力" xml:space="preserve">
     <value>核心竞争力</value>
     <comment>about</comment>
@@ -210,16 +214,24 @@
     <comment>category</comment>
   </data>
   <data name="相關證照" xml:space="preserve">
-    <value>SGS RoHS ISO</value>
+    <value>相关证照</value>
     <comment>about</comment>
   </data>
   <data name="礦產衝突聲明" xml:space="preserve">
     <value>矿产冲突声明</value>
     <comment>enterpriseSustainable</comment>
   </data>
+  <data name="福利介紹" xml:space="preserve">
+    <value>福利介紹</value>
+    <comment>JoinUs</comment>
+  </data>
   <data name="聯絡我們" xml:space="preserve">
     <value>联络我们</value>
     <comment>category</comment>
+  </data>
+  <data name="艾格生的生活" xml:space="preserve">
+    <value>艾格生的生活</value>
+    <comment>JoinUs</comment>
   </data>
   <data name="里程碑" xml:space="preserve">
     <value>里程碑</value>
