@@ -1,20 +1,26 @@
 ﻿@page "/{Language}/index"
 @inherits IndexBase
 
-<PageTitle>@Localizer["公司名稱"]</PageTitle>
+<PageTitle>@Localizer["WebTitle"] - @Localizer["Index"]</PageTitle>
 <HeadContent>
     <meta property="og:title" content="@Localizer["公司名稱"]" />
     <meta property="og:description" content="艾格生科技官方網站, Xsense Official" />
     <meta property="og:locale" content="@Language">
     <meta property="og:image" content="">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+
+    <!-- Swiper -->
+    <script type="text/javascript" src="/js/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" defer />
 </HeadContent>
 
-<article id="index" class="swiper mySwiper">
-    <div class="swiper-wrapper">
-        @foreach (var swiper in SwiperImgs)
+    <article id="index" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            @foreach (var swiper in SwiperImgs)
         {
             <div class="swiper-slide">
-                <img src=@swiper alt="swiper image" />
+                <img data-src=@swiper class="lazyload" alt="swiper image" />
             </div>
         }
     </div>

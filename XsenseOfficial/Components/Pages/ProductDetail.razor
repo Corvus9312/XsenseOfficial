@@ -1,7 +1,7 @@
 ﻿@page "/{Language}/product/{TypeID:int}"
 @inherits ProductDetailBase
 
-<PageTitle>@Localizer["公司名稱"] - @ProductVM.Title</PageTitle>
+<PageTitle>@Localizer["WebTitle"] - @ProductVM.Title</PageTitle>
 <HeadContent>
     <meta property="og:title" content="@Localizer["公司名稱"] - @ProductVM.Title" />
     <meta property="og:description" content="@ReplaceHtmlTag(ProductVM.Content)">

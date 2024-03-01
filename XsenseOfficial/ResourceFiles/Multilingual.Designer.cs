@@ -169,11 +169,29 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
+        ///   查詢類似 首頁 的當地語系化字串。
+        /// </summary>
+        public static string Index {
+            get {
+                return ResourceManager.GetString("Index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 公司位置 的當地語系化字串。
         /// </summary>
         public static string Position {
             get {
                 return ResourceManager.GetString("Position", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 艾格生科技 的當地語系化字串。
+        /// </summary>
+        public static string WebTitle {
+            get {
+                return ResourceManager.GetString("WebTitle", resourceCulture);
             }
         }
         
@@ -214,7 +232,7 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
-        ///   查詢類似 艾格生科技 的當地語系化字串。
+        ///   查詢類似 艾格生 的當地語系化字串。
         /// </summary>
         public static string 公司名稱 {
             get {
@@ -241,7 +259,7 @@ namespace XsenseOfficial.ResourceFiles {
         }
         
         /// <summary>
-        ///   查詢類似 艾格生科技 學習發展體系 的當地語系化字串。
+        ///   查詢類似 學習發展體系 的當地語系化字串。
         /// </summary>
         public static string 學習發展體系 {
             get {
